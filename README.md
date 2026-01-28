@@ -29,6 +29,41 @@ A full-stack Point of Sale application built as an internship task for PosBuzz. 
 
 ---
 
+## ✅ What was completed
+
+* Full-Stack Architecture: Implemented a modular monorepo structure using NestJS for the backend and React (Vite) for the frontend.
+
+* Authentication & Security: Built a secure JWT-based authentication system. Added an "auto-registration" feature to simplify testing for reviewers (automatically registers new users if credentials don't exist).
+
+* Inventory Management: Developed full CRUD capabilities for products. Implemented real-time stock tracking with visual indicators for low-stock items.
+
+* Sales System: Created a transactional sales engine that verifies stock availability before processing. Sales instantly deduct inventory from the database.
+
+* Modern Dashboard: Designed a responsive UI using Ant Design and TanStack Query, featuring real-time statistics for total revenue, products in stock, and recent transactions.
+
+* Deployment: Successfully deployed the backend to Render and the frontend to Vercel with fully configured environment variables.
+
+* API Documentation: Included a complete Postman Collection in the repository to facilitate easy testing of all API endpoints.
+
+---
+
+## ❌ What was not completed
+
+* Product Update & Delete UI: While the backend likely supports full CRUD operations, the Frontend currently focuses on "Create" and "Read" functionalities to prioritize the core Sales workflow. The "Edit" and "Delete" buttons were not wired up in the user interface due to time constraints.
+
+* Sales History Page: The system records sales in the database and updates the Dashboard statistics (revenue/stock), but a dedicated page to view a detailed table of past transaction logs was not built.
+
+* Pagination: The product list currently loads all items at once. For a production-scale system with thousands of items, server-side pagination would be required.
+
+* Unit & Integration Tests: Comprehensive automated testing (Jest/Supertest) was omitted to focus on delivering a fully deployed, functional full-stack application within the deadline.
+  
+---
+
+## 👉 Why? (The Explanation)
+"I prioritized the 'Critical Path', ensuring the complex logic of authentication, real-time inventory deduction, and deployment was robust and bug-free. I chose to polish the User Experience (UX) of the core 'Sale' feature and ensure a successful live deployment over adding secondary CRUD features like 'Edit Product' or extensive test coverage."
+
+---
+
 ## 🛠️ Tech Stack
 
 ### **Backend**
@@ -158,3 +193,4 @@ posbuzz-internship-task/
 ## 👤 Author
 
 **Ismail Mahmud Nur**
+
